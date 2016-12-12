@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source "custom-task-base/task-base"
+
+task() {
+  cd "$source_dir"
+  crystal deps
+  crystal build --release src/doge-weather.cr
+}
+
+main "$@"

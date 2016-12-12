@@ -1,0 +1,16 @@
+name: doge-weather
+version: 0.1.0
+
+authors:
+  - Gregory Arcara <greg.arcara@gmail.com>
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+    branch: master
+targets:
+  doge-weather:
+   main: src/doge-weather.cr
+
+crystal: 0.20.1
+
+license: MIT

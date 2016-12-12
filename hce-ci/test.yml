@@ -1,0 +1,21 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: crystallang/crystal
+    tag: 0.20.1
+
+inputs:
+  - name: custom-task-base
+  - name: helionce-git-repo
+  - name: build_code_output
+outputs:
+  - name: test_code_output
+
+run:
+  path: sh
+  args:
+  - -exc
+  - helionce-git-repo/hce-ci/scripts/test build_code_output test_code_output
