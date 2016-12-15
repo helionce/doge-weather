@@ -1,10 +1,10 @@
 ---
 applications:
-  - name: doge-weather
+  - name: doge-weather-helionce
     memory: 256M
     buildpack: https://github.com/crystal-lang/heroku-buildpack-crystal.git
     description : Doge weather sample app.
     memory: 100M
-    host: dogeweather
+    host: dogeweatherhelionce
     disk_quota: 100M
 
